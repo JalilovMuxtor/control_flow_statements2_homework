@@ -19,5 +19,5 @@ def main(a,b,c):
             print(b)
         else:
             print(c)
-    return 'javobi'
+    return 'kichigi'
 print(main(2,6,3))
