@@ -8,16 +8,16 @@ def main(a,b,c):
     Returns:
         int: return answer.
     """
+    
     if a<b:
         if a<c:
-            print(a)
+            return(a)
         else:
-            print(c)
-        
+            return(c)
+
     else:
         if b<c:
-            print(b)
+            return(b)
         else:
-            print(c)
-    return 'kichigi'
+            return(c) 
 print(main(2,6,3))
