@@ -13,4 +13,13 @@ def main(temp):
     Returns:
         str: return answer.
     """
-    return
+    if temp<10:
+        print('juda sovuq')
+    if temp<20:
+        print('sovuq')
+    elif temp<30:
+        print('issq')
+    elif temp<40:
+        print('juda issiq')
+    return temp
+print(main(36))
