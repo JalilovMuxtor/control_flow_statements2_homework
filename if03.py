@@ -10,8 +10,8 @@ def main(a,b,c):
     """
     if (a>b and b>c ) or (c>b and b>a):
         return b
-    if (b>a and a>c) or (c>a and a>b):
+    elif (b>a and a>c) or (c>a and a>b):
         return a
-    if (a>c and c>b or b>c and c>a):
+    elif (a>c and c>b or b>c and c>a):
         return c
-print(main(-5,-3,-1))
+print(main(2,6,8))
