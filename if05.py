@@ -6,17 +6,6 @@ def main(n):
     Returns:
         int: return answer.
     """
-    n=12345
-    if y<x1:
-        y=x1
-    if y<x2:
-        y=x2
-    elif y<x3:
-        y=x3
-    elif y<x4:
-        y=x4
-    elif y<x5:
-        y=x5
     x1=n%10
     n=n//10
     x2=n%10
@@ -25,8 +14,16 @@ def main(n):
     n=n//10
     x4=n%10
     n=n//10
-    x5=n%10
-    n=n//10
-    y=n
-    return(y)
-print(main(12))
+    x5=n//10
+    mx=x1
+    if mx<x2:
+        mx=x2
+    if mx<x3:
+        mx=x3
+    if mx<x4:
+        mx=x4
+    if mx<x5:
+        mx=x5
+  
+    return mx
+print(main(15642))

@@ -7,18 +7,30 @@ def main(n):
         int: return answer.
     """
     
-    n1=n%10
+    x1=n%10
     n=n//10
-
-    n2=n%10
+    x2=n%10
     n=n//10
-
-    n3=n%10
+    x3=n%10
     n=n//10
-
-    n4=n%10
+    x4=n%10
     n=n//10
+    x5=n//10
+    mx=x1
+    i=4
+    if mx<x2:
+        mx=x2
+        i=3
 
-    n5=n
-    return n1,n2,n3,n4,n5
-print(main(56892))
+    if mx<x3:
+        mx=x3
+        i=2
+    if mx<x4:
+        mx=x4
+        i=1
+    if mx<x5:
+        mx=x5
+        i=0
+  
+    return i
+print(main(15342))

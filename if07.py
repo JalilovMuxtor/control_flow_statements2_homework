@@ -14,15 +14,15 @@ def main(temp):
         str: return answer.
     """
     if temp<0:
-        return 'muzlamoqda'
+        return "Freezing"
     elif temp>=1 and temp<=10:
-        return 'juda sovuq'
+        return  "Very Cold"
     elif temp>=11 and temp<=20:
-        return 'sovuq'
+        return "Cold"
     elif temp>=21 and temp<=30:
-        return 'oddiy'
+        return  "Normal"
     elif temp>=31 and temp<=40:
-        return 'issiq'
+        return "Hot"
     elif temp>40:
-        return 'juda issiq'
+        return "Very Hot"
 print(main(26))
